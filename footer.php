@@ -28,9 +28,6 @@
   </div>
 
 </div>
-
-<script async
-src="<?php $this->options->themeUrl('js/highlight.js'); ?>"></script>
 <script>
 
         function im() {

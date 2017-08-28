@@ -10,8 +10,7 @@
         'author'    =>  _t('%s 发布的文章')
         ), '', ' - '); ?><?php $this->options->title(); ?></title>
 <?php $this->header(); ?>
-    <link href="<?php $this->options->themeUrl('css/style.css'); ?>"rel="stylesheet">
-    <link href="<?php $this->options->themeUrl('css/shighlight.css'); ?>"rel="stylesheet">
+    <link href="<?php $this->options->themeUrl('style.css'); ?>"rel="stylesheet">
     </head>
 <body>
 <div class="m">
