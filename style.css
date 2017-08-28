@@ -14,7 +14,7 @@ h2{font:175%/1 'v',sans-serif;padding:1.5em 0 .5em 0;margin:0}
 @media(min-width:60em){h2{font-size:150%}}
 h3{font:150%/1 'v',sans-serif;padding:.75em 0;margin:0}
 @media(min-width:75em){h3{font-size:200%}}
-img{max-width:100%;height:auto;border:0;box-shadow:0 4px 6px rgba(0,0,0,.2)}
+img{max-width:100%;height:auto;border:0;}
 svg{overflow:hidden;position:absolute;top:0;left:0}
 hr{border:0;height:0;border-top:1px solid rgba(33,33,33,.1);border-bottom:1px solid rgba(255,255,255,.1);padding-bottom:10px}
 nav a{font-size:15px;text-decoration:none;color:#444;border:0}

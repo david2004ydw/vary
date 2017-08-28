@@ -19,8 +19,8 @@
             <div class="go topad">
                 <form id="search" method="post" action="./" role="search"><input type="text" class="text" name="s" placeholder="搜索"></form>
             </div>
-            <nav><img src="logo.png"
- class="logo" width="30" height="30"/><a href="<?php $this->options->siteUrl(); ?>"><?php _e('首页'); ?></a><?php $this->widget('Widget_Contents_Page_List')->to($pages); ?><?php while($pages->next()): ?>  &nbsp;<a<?php if($this->is('page', $pages->slug)): ?> class="current"<?php endif; ?> href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>"><?php $pages->title(); ?></a><?php endwhile; ?></nav>
+            <nav><img src="<?php if ($this->options->headLogo): ?><?php $this->options->headLogo(); ?><?php else: ?>data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=<?php endif; ?>"
+ width="30" height="30" class="logo"/><a href="<?php $this->options->siteUrl(); ?>"><?php _e('首页'); ?></a><?php $this->widget('Widget_Contents_Page_List')->to($pages); ?><?php while($pages->next()): ?>  &nbsp;<a<?php if($this->is('page', $pages->slug)): ?> class="current"<?php endif; ?> href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>"><?php $pages->title(); ?></a><?php endwhile; ?></nav>
         </div>
       </div>
       <div class="con">
