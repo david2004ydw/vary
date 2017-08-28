@@ -1,0 +1,2 @@
+# vary
+A Typecho Theme.
