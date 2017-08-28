@@ -18,3 +18,18 @@ function themeConfig($form) {
     $donateImage = new Typecho_Widget_Helper_Form_Element_Text('donateImage', NULL, NULL, _t('打赏二维码'), _t('在文章、页面后插入一个二维码（正方形）。'));
     $form->addInput($donateImage);
 }
+
+//a blank
+function themeInit($archive)
+{
+    if ($archive->is('single'))
+    {
+        $archive->content = image_class_replace($archive->content);
+    }
+}
+function image_class_replace($content)
+{
+  $content = preg_replace('#<a(.*?) href="([^"]*/)?(([^"/]*)\.[^"]*)"(.*?)>#',
+        '<a$1 href="$2$3"$5 target="_blank">', $content);
+    return $content;
+}
