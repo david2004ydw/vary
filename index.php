@@ -1,4 +1,4 @@
-﻿<?php
+﻿﻿<?php
 /**
  * 
  * @package Vary
@@ -30,6 +30,25 @@ $this->need('header.php');?>
           </div>
         </div>
         <?php endif; ?>
+        <?php endif; ?>
+
+          <?php while($this->next()): ?>
+          <div class="column third font ani in"> 
+            <div class="wrapper">
+              <div class="card radius shadowDepth1">
+                <div class="card__content card__padding">
+                  <div class="card__article">
+                    <h2><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h2>
+                    <p><?php $this->content(点开全文); ?></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clr"></div>
+          <?php endwhile; ?>
+          <?php $this->pageNav('&laquo;', '&raquo;', 5, '...', array('wrapTag' => 'ul', 'wrapClass' => 'page-change', 'itemTag' => 'li', 'textTag' => 'span', 'currentClass' => 'active', 'prevClass' => 'prev', 'nextClass' => 'next')); ?>
+<?php $this->need('footer.php'); ?>
         <?php endif; ?>
 
           <?php while($this->next()): ?>

@@ -1,35 +1,21 @@
-﻿        </div>
-
+﻿       </div>
       </div>
-
     </div>
-
-  <br>
-
-  <div style="text-align:center;padding-bottom:1em;font-size:12px">
-
+    <div class="clr"></div>
+    <br>
+    <div style="text-align:center;padding-bottom:1em;font-size:12px">
     <a href="<?php $this->options->feedUrl(); ?>" target="_blank">文章RSS</a> | 
-
     <a href="<?php $this->options->commentsFeedUrl(); ?>" target="_blank">评论RSS</a> | 
-
     <a href="http://typecho.org" target="_blank">Typecho</a> | 
-
     <a href="https://github.com/2004David/vary" target="_blank">Theme Vary</a>
-
   </div>
-
   <div role="contentinfo">
-
     <div class="footmenu">
       Copyright <?php $this->options->title(); ?>. All rights reserved.
-
     </div>
-
   </div>
-
 </div>
 <script>
-
         function im() {
              var vizimgDefer = document.getElementsByTagName('img');
 for (var i=0; i<vizimgDefer.length; i++) {
@@ -43,16 +29,10 @@ for (var i=0; i<imgDefer.length; i++) {
 if(imgDefer[i].getAttribute('data-src')) {
 imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
 } }
-        hljs.initHighlightingOnLoad(); // highlight.js
 </script>
-
 <?php $this->footer(); ?>
-
 </body>
-
 </html>
-
-
 
 <?php 
 $echo = ob_get_contents(); 
